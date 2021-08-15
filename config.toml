@@ -1,4 +1,46 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://aluhrs13.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Andy's Ramblings"
 theme='beautifulhugo'
+metaDataFormat = "yaml"
+
+[Params]
+  subtitle = "Ramblings and notes to my future self about things I'm probably going to forget."
+  useHLJS = true
+  commit = false
+
+  mainSections = ["post","posts"]
+  logo = "img/avatar-icon.png" # Expecting square dimensions
+  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  rss = true
+  comments = true
+  readingTime = true
+  wordCount = true
+  socialShare = true
+  delayDisqus = true
+  showRelatedPosts = true
+#  hideAuthor = true
+
+[Author]
+  name = "Andy Luhrs"
+  website = "aluhrs.com"
+  github = "aluhrs13"
+  twitter = "aluhrs13"
+  linkedin = "aluhrs"
+  instagram = "andy.makes"
+
+[[menu.main]]
+    name = "Blog"
+    url = ""
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "page/about/"
+    weight = 3
+
+[[menu.main]]
+    name = "Tags"
+    url = "tags"
+    weight = 2
